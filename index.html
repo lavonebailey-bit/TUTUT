@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Friendly, step-by-step help with phones, tablets, computers, and online safety." data-i18n-attr="content:meta.description">
+  <title>TUTUT | Technology help at your pace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to the help topics</a>
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <symbol id="tutut-train-mascot" viewBox="0 0 240 220">
+      <g class="mascot-tracks">
+        <path class="mascot-rail" d="M34 190h172"></path>
+        <path class="mascot-rail" d="M52 206h136"></path>
+        <path class="mascot-sleeper" d="M62 184l-14 28"></path>
+        <path class="mascot-sleeper" d="M103 184l-10 28"></path>
+        <path class="mascot-sleeper" d="M144 184l10 28"></path>
+        <path class="mascot-sleeper" d="M184 184l14 28"></path>
+      </g>
+      <path class="mascot-pantograph" d="M80 45l40-30 40 30M92 45h56"></path>
+      <rect class="mascot-body" x="39" y="54" width="162" height="118" rx="28"></rect>
+      <path class="mascot-top" d="M68 54h104l-14-28H82z"></path>
+      <rect class="mascot-face" x="67" y="75" width="106" height="64" rx="20"></rect>
+      <circle class="mascot-eye" cx="99" cy="104" r="7"></circle>
+      <circle class="mascot-eye" cx="141" cy="104" r="7"></circle>
+      <circle class="mascot-cheek" cx="87" cy="122" r="7"></circle>
+      <circle class="mascot-cheek" cx="153" cy="122" r="7"></circle>
+      <path class="mascot-smile" d="M100 122c10 13 30 13 40 0"></path>
+      <circle class="mascot-headlight" cx="66" cy="150" r="9"></circle>
+      <circle class="mascot-headlight" cx="174" cy="150" r="9"></circle>
+      <rect class="mascot-bumper" x="77" y="145" width="86" height="20" rx="10"></rect>
+      <circle class="mascot-wheel" cx="78" cy="176" r="15"></circle>
+      <circle class="mascot-wheel" cx="162" cy="176" r="15"></circle>
+      <circle class="mascot-hub" cx="78" cy="176" r="6"></circle>
+      <circle class="mascot-hub" cx="162" cy="176" r="6"></circle>
+      <path class="mascot-bolt" d="M120 32 106 58h22l-11 28 34-41h-23l10-13z"></path>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="TUTUT home">
+      <span class="brand-mark" aria-hidden="true">T</span>
+      <span>TUTUT</span>
+    </a>
+    <nav aria-label="Main navigation" data-i18n-attr="aria-label:nav.label">
+      <a href="#help" data-i18n="nav.help">Get help</a>
+      <a href="#did-you-know" data-i18n="nav.didYouKnow">Did you know?</a>
+      <a href="#social-media" data-i18n="nav.social">Social media</a>
+      <a href="#track-challenge" data-i18n="nav.game">Game</a>
+      <a href="#learn" data-i18n="nav.learn">Learn</a>
+      <a href="#safety" data-i18n="nav.safety">Stay safe</a>
+    </nav>
+    <button class="display-toggle" id="text-size-button" type="button" aria-pressed="false">
+      <span aria-hidden="true">Aa</span> <span data-i18n="text.large">Larger text</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Technology help at your pace</p>
+        <h1 data-i18n="hero.title">Let’s make your technology feel easier.</h1>
+        <p class="hero-intro" data-i18n="hero.intro">
+          Clear answers for phones, tablets, and computers. No confusing words.
+          No judgment. No downloads needed.
+        </p>
+        <p class="slogan" data-i18n="brand.slogan">Don’t worry, you’re on the right track.</p>
+        <a class="primary-button" href="#help" data-i18n="hero.cta">What do you need help with?</a>
+      </div>
+      <div class="hero-card" aria-label="A promise from TUTUT">
+        <div class="speech-bubble">
+          <strong data-i18n="hero.bubbleTitle">Take your time.</strong>
+          <span data-i18n="hero.bubbleText">You cannot break anything by reading these guides.</span>
+        </div>
+        <svg class="mascot mascot-hero" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="What to expect" data-i18n-attr="aria-label:trust.label">
+      <div><span aria-hidden="true">✓</span> <span data-i18n="trust.free">Free to read</span></div>
+      <div><span aria-hidden="true">✓</span> <span data-i18n="trust.account">Account optional</span></div>
+      <div><span aria-hidden="true">✓</span> <span data-i18n="trust.plain">Plain language</span></div>
+      <div><span aria-hidden="true">✓</span> <span data-i18n="brand.slogan">Don’t worry, you’re on the right track.</span></div>
+    </section>
+
+    <section class="welcome-section" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <p class="eyebrow" data-i18n="welcome.eyebrow">Welcome to TUTUT</p>
+        <h2 id="welcome-title" data-i18n="welcome.title">We’re here because technology should not feel intimidating.</h2>
+        <p data-i18n="welcome.bodyOne">Phones and computers change quickly, and anyone can feel left behind. TUTUT is a friendly place to ask questions, learn one step at a time, and find clear answers without judgment.</p>
+        <p data-i18n="welcome.bodyTwo">We are not here to sell unnecessary downloads, rush you, or make you feel embarrassed. We simply want to help you feel safer, more confident, and more independent with your technology.</p>
+      </div>
+      <div class="welcome-promises" aria-label="What TUTUT promises" data-i18n-attr="aria-label:welcome.promisesLabel">
+        <article>
+          <span aria-hidden="true">?</span>
+          <div><strong data-i18n="welcome.askTitle">Ask anything</strong><p data-i18n="welcome.askBody">There are no silly questions here.</p></div>
+        </article>
+        <article>
+          <span aria-hidden="true">1</span>
+          <div><strong data-i18n="welcome.paceTitle">Go at your pace</strong><p data-i18n="welcome.paceBody">Take one clear step at a time.</p></div>
+        </article>
+        <article>
+          <span aria-hidden="true">✓</span>
+          <div><strong data-i18n="welcome.safeTitle">Feel safer</strong><p data-i18n="welcome.safeBody">Learn what to trust, close, or avoid.</p></div>
+        </article>
+      </div>
+      <aside class="welcome-ai-warning" role="note" aria-labelledby="welcome-ai-title">
+        <span aria-hidden="true">AI</span>
+        <div>
+          <h3 id="welcome-ai-title" data-i18n="welcome.aiTitle">Important: A familiar voice or face may be copied by AI.</h3>
+          <p data-i18n="welcome.aiBody">If a surprising call or video asks for money, secrecy, screen sharing, passwords, or a security code, stop and end the call. Contact the person or company yourself using a number you already trust.</p>
+          <a href="#ai-scams" data-i18n="welcome.aiLink">Read the AI and scam safety guide</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="community-section" aria-label="Top community questions this week" data-i18n-attr="aria-label:community.label">
+      <div class="community-heading">
+        <div>
+          <p class="eyebrow" data-i18n="community.eyebrow">Community questions</p>
+          <h2 data-i18n="community.title">Top 3 questions answered this week</h2>
+          <p data-i18n="community.body">Real questions from TUTUT patrons, answered in plain language.</p>
+        </div>
+        <svg class="mascot mascot-small community-mascot" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg>
+      </div>
+
+      <div class="question-grid">
+        <article class="question-card heat-card">
+          <span class="card-emoji" aria-hidden="true">🗺️</span>
+          <div class="question-meta">
+            <span data-i18n="community.rankOne">#1 this week</span>
+            <strong data-i18n="community.patronOne">Maria G.</strong>
+          </div>
+          <h3 data-i18n="community.q1.title">Why does my phone get hot when I use maps?</h3>
+          <p data-i18n="community.q1.answer">Navigation uses GPS, screen brightness, internet, and sound at the same time. Close the map app after your trip and keep the phone out of direct sun.</p>
+        </article>
+
+        <article class="question-card alert-card">
+          <span class="card-emoji" aria-hidden="true">🚨</span>
+          <div class="question-meta">
+            <span data-i18n="community.rankTwo">#2 this week</span>
+            <strong data-i18n="community.patronTwo">Robert L.</strong>
+          </div>
+          <h3 data-i18n="community.q2.title">Should I tap a pop-up that says my phone has a virus?</h3>
+          <p data-i18n="community.q2.answer">No. Close the browser tab or app. Do not call the number, download the cleaner app, or give anyone a payment card.</p>
+        </article>
+
+        <article class="question-card">
+          <span class="card-emoji" aria-hidden="true">📦</span>
+          <div class="question-meta">
+            <span data-i18n="community.rankThree">#3 this week</span>
+            <strong data-i18n="community.patronThree">Linda P.</strong>
+          </div>
+          <div class="storage-meter" role="img" aria-label="Storage is almost full: 92 percent used">
+            <div class="storage-meter-top">
+              <span>Storage</span>
+              <strong>92%</strong>
+            </div>
+            <div class="storage-track" aria-hidden="true">
+              <span class="storage-fill"></span>
+            </div>
+          </div>
+          <h3 data-i18n="community.q3.title">Why is my storage almost full?</h3>
+          <p data-i18n="community.q3.answer">Photos, videos, message attachments, and unused apps can fill a phone quickly. Start by deleting large videos and apps you no longer use.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="utility-panel" aria-label="Language and sign in" data-i18n-attr="aria-label:utility.label">
+      <div class="language-card">
+        <span class="card-emoji" aria-hidden="true">🌐</span>
+        <svg class="mascot mascot-small mascot-language" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg>
+        <label for="language-select" data-i18n="language.label">Choose your language</label>
+        <select id="language-select" autocomplete="language">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="zh">中文</option>
+          <option value="tl">Tagalog</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="ar">العربية</option>
+          <option value="fr">Français</option>
+          <option value="ko">한국어</option>
+          <option value="ru">Русский</option>
+          <option value="pt">Português</option>
+        </select>
+        <p data-i18n="language.note">TUTUT remembers this language on this device.</p>
+      </div>
+
+      <div class="display-card">
+        <span class="card-emoji" aria-hidden="true">👁️</span>
+        <p class="eyebrow" data-i18n="display.eyebrow">Display options</p>
+        <h2 data-i18n="display.title">Make the page easier to see.</h2>
+        <div class="display-actions" aria-label="Display options" data-i18n-attr="aria-label:display.label">
+          <button class="display-toggle" id="night-mode-button" type="button" aria-pressed="false">
+            <span aria-hidden="true">☾</span> <span data-i18n="display.nightOn">Night mode</span>
+          </button>
+          <button class="display-toggle" id="color-mode-button" type="button" aria-pressed="false">
+            <span aria-hidden="true">◐</span> <span data-i18n="display.colorOn">Color-blind colors</span>
+          </button>
+        </div>
+        <p data-i18n="display.note">These choices stay on this device until you turn them off.</p>
+      </div>
+
+      <form class="signin-card" id="signin-form" autocomplete="on">
+        <div>
+          <span class="card-emoji" aria-hidden="true">🔐</span>
+          <p class="eyebrow" data-i18n="signin.eyebrow">Remember me</p>
+          <h2 data-i18n="signin.title">Sign in next time faster.</h2>
+          <p data-i18n="signin.body">Use a simple TUTUT name and password. Your browser can offer to save the password in its own password manager.</p>
+        </div>
+        <div class="signin-fields">
+          <label for="patron-name" data-i18n="signin.name">Your name</label>
+          <input id="patron-name" name="username" type="text" autocomplete="username" inputmode="text">
+          <label for="patron-password" data-i18n="signin.password">Password</label>
+          <input id="patron-password" name="current-password" type="password" autocomplete="current-password">
+          <button class="primary-button form-button" type="submit" data-i18n="signin.button">Save for this device</button>
+          <p class="signin-message" id="signin-message" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+
+    <section class="help-section" id="help">
+      <div class="section-heading train-heading">
+        <div>
+          <p class="eyebrow" data-i18n="help.eyebrow">Start here</p>
+          <h2 data-i18n="help.title">What can we help you with?</h2>
+          <p data-i18n="help.body">Choose a topic below or search using your own words.</p>
+        </div>
+        <svg class="mascot mascot-heading mascot-help" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg>
+      </div>
+
+      <div class="search-box">
+        <label for="help-search" data-i18n="search.label">Search for an answer</label>
+        <div class="search-input-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="help-search" type="search" placeholder="Try “phone is slow” or “pop-ups”" autocomplete="off" data-i18n-attr="placeholder:search.placeholder">
+        </div>
+      </div>
+
+      <div class="device-picker" aria-labelledby="device-label">
+        <span id="device-label" data-i18n="device.label">I use:</span>
+        <button class="device-button active" type="button" data-device="all" aria-pressed="true" data-i18n="device.all">Any device</button>
+        <button class="device-button" type="button" data-device="iphone" aria-pressed="false" data-i18n="device.iphone">iPhone / iPad</button>
+        <button class="device-button" type="button" data-device="android" aria-pressed="false" data-i18n="device.android">Android</button>
+        <button class="device-button" type="button" data-device="computer" aria-pressed="false" data-i18n="device.computer">Computer</button>
+      </div>
+
+      <div class="topic-grid" id="topic-grid">
+        <button class="topic-card coral" type="button" data-guide="slow-phone" data-devices="iphone android" data-search="phone slow frozen storage battery apps">
+          <span class="topic-icon" aria-hidden="true">🐢</span>
+          <span class="topic-copy">
+            <strong data-i18n="topics.slow.title">My phone is slow</strong>
+            <small data-i18n="topics.slow.sub">Simple steps to speed it up</small>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+
+        <button class="topic-card yellow alert-card" type="button" data-guide="popups" data-devices="iphone android computer" data-search="pop ups popup ads virus warning download scam">
+          <span class="topic-icon" aria-hidden="true">🚨</span>
+          <span class="topic-copy">
+            <strong data-i18n="topics.popups.title">Pop-ups and strange warnings</strong>
+            <small data-i18n="topics.popups.sub">Know what is safe to close</small>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+
+        <button class="topic-card blue" type="button" data-guide="wifi" data-devices="iphone android computer" data-search="wifi internet connect offline password router">
+          <span class="topic-icon" aria-hidden="true">📶</span>
+          <span class="topic-copy">
+            <strong data-i18n="topics.wifi.title">Wi-Fi is not working</strong>
+            <small data-i18n="topics.wifi.sub">Get connected again</small>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+
+        <button class="topic-card green" type="button" data-guide="messages" data-devices="iphone android" data-search="text photo message send receive picture">
+          <span class="topic-icon" aria-hidden="true">💬</span>
+          <span class="topic-copy">
+            <strong data-i18n="topics.messages.title">Texts and photos</strong>
+            <small data-i18n="topics.messages.sub">Send, receive, and find them</small>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+
+        <button class="topic-card lavender" type="button" data-guide="passwords" data-devices="iphone android computer" data-search="password forgot login sign in reset secure">
+          <span class="topic-icon" aria-hidden="true">🔑</span>
+          <span class="topic-copy">
+            <strong data-i18n="topics.passwords.title">Passwords and signing in</strong>
+            <small data-i18n="topics.passwords.sub">Safe ways to get back in</small>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+
+        <button class="topic-card mint" type="button" data-guide="scams" data-devices="iphone android computer" data-search="scam fraud suspicious call text email money code">
+          <span class="topic-icon" aria-hidden="true">🛑</span>
+          <span class="topic-copy">
+            <strong data-i18n="topics.scams.title">Is this a scam?</strong>
+            <small data-i18n="topics.scams.sub">Stop and check before acting</small>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+
+        <button class="topic-card orange" type="button" data-guide="damaged-phone" data-devices="iphone android" data-search="phone damaged broken cracked screen repair replace claim carrier insurance water battery fix shop">
+          <span class="topic-icon" aria-hidden="true">🛠️</span>
+          <span class="topic-copy">
+            <strong data-i18n="topics.damage.title">My phone is damaged</strong>
+            <small data-i18n="topics.damage.sub">Repair, replace, or file a claim</small>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+      <p class="no-results" id="no-results" hidden data-i18n="search.noResults">We could not find that yet. Try a shorter phrase, such as “Wi-Fi” or “password.”</p>
+    </section>
+
+    <section class="did-you-know-section" id="did-you-know">
+      <div class="section-heading train-heading">
+        <div>
+          <p class="eyebrow" data-i18n="didYouKnow.eyebrow">Hey, did you know?</p>
+          <h2 data-i18n="didYouKnow.title">20 quick do’s and don’ts for a happier phone.</h2>
+          <p data-i18n="didYouKnow.body">Small habits can make your phone faster, safer, cooler, and less frustrating.</p>
+        </div>
+        <svg class="mascot mascot-heading mascot-tips" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg>
+      </div>
+
+      <div class="tips-grid" aria-label="20 technology do and don't tips" data-i18n-attr="aria-label:didYouKnow.listLabel">
+        <article class="tip-card do-card heat-card">
+          <span class="card-emoji" aria-hidden="true">🗺️</span>
+          <span data-i18n="tips.do">Do</span>
+          <h3 data-i18n="tips.1.title">Close navigation apps after your trip.</h3>
+          <p data-i18n="tips.1.body">Maps and GPS keep using location in the background. Leaving them open can heat the phone and drain the battery faster.</p>
+        </article>
+        <article class="tip-card dont-card heat-card">
+          <span class="card-emoji" aria-hidden="true">📱</span>
+          <span data-i18n="tips.dont">Don’t</span>
+          <h3 data-i18n="tips.2.title">Don’t leave social media videos running.</h3>
+          <p data-i18n="tips.2.body">Video apps keep the screen, sound, internet, and processor busy. That can make the phone warm quickly.</p>
+        </article>
+        <article class="tip-card do-card">
+          <span class="card-emoji" aria-hidden="true">🔄</span>
+          <span data-i18n="tips.do">Do</span>
+          <h3 data-i18n="tips.3.title">Restart your phone once a week.</h3>
+          <p data-i18n="tips.3.body">A restart clears stuck background tasks and gives the phone a fresh start.</p>
+        </article>
+        <article class="tip-card dont-card">
+          <span class="card-emoji" aria-hidden="true">🧹</span>
+          <span data-i18n="tips.dont">Don’t</span>
+          <h3 data-i18n="tips.4.title">Don’t install “cleaner” apps from ads.</h3>
+          <p data-i18n="tips.4.body">Many cleaner apps show pop-ups, collect data, or make the phone feel worse. Use built-in Settings instead.</p>
+        </article>
+        <article class="tip-card do-card">
+          <span class="card-emoji" aria-hidden="true">📦</span>
+          <span data-i18n="tips.do">Do</span>
+          <h3 data-i18n="tips.5.title">Keep at least a little storage free.</h3>
+          <p data-i18n="tips.5.body">Phones slow down when storage is nearly full. Delete large videos or unused apps first.</p>
+        </article>
+        <article class="tip-card dont-card heat-card">
+          <span class="card-emoji" aria-hidden="true">🌡️</span>
+          <span data-i18n="tips.dont">Don’t</span>
+          <h3 data-i18n="tips.6.title">Don’t ignore heat warnings.</h3>
+          <p data-i18n="tips.6.body">If the phone says it needs to cool down, stop using it, remove the case, and keep it out of direct sun.</p>
+        </article>
+        <article class="tip-card do-card">
+          <span class="card-emoji" aria-hidden="true">🏬</span>
+          <span data-i18n="tips.do">Do</span>
+          <h3 data-i18n="tips.7.title">Use official app stores.</h3>
+          <p data-i18n="tips.7.body">Get apps from the Apple App Store or Google Play. Random download buttons are a common scam doorway.</p>
+        </article>
+        <article class="tip-card dont-card">
+          <span class="card-emoji" aria-hidden="true">🚨</span>
+          <span data-i18n="tips.dont">Don’t</span>
+          <h3 data-i18n="tips.8.title">Don’t tap scary pop-up warnings.</h3>
+          <p data-i18n="tips.8.body">Close the browser tab or app instead. Real companies do not ask you to call a number inside a pop-up.</p>
+        </article>
+        <article class="tip-card do-card">
+          <span class="card-emoji" aria-hidden="true">⬆️</span>
+          <span data-i18n="tips.do">Do</span>
+          <h3 data-i18n="tips.9.title">Update your phone when it asks.</h3>
+          <p data-i18n="tips.9.body">Updates fix security problems and often improve battery, speed, and reliability.</p>
+        </article>
+        <article class="tip-card dont-card">
+          <span class="card-emoji" aria-hidden="true">🔢</span>
+          <span data-i18n="tips.dont">Don’t</span>
+          <h3 data-i18n="tips.10.title">Don’t share text-message codes.</h3>
+          <p data-i18n="tips.10.body">A six-digit code is like a temporary key. Banks, Apple, Google, and Microsoft will not call to ask for it.</p>
+        </article>
+        <article class="tip-card do-card heat-card">
+          <span class="card-emoji" aria-hidden="true">💡</span>
+          <span data-i18n="tips.do">Do</span>
+          <h3 data-i18n="tips.11.title">Turn down screen brightness indoors.</h3>
+          <p data-i18n="tips.11.body">A bright screen uses a lot of battery and adds heat. Auto-brightness can help.</p>
+        </article>
+        <article class="tip-card dont-card heat-card">
+          <span class="card-emoji" aria-hidden="true">🔌</span>
+          <span data-i18n="tips.dont">Don’t</span>
+          <h3 data-i18n="tips.12.title">Don’t charge under a pillow or blanket.</h3>
+          <p data-i18n="tips.12.body">Charging creates heat. Keep the phone on a hard, open surface while it charges.</p>
+        </article>
+        <article class="tip-card do-card">
+          <span class="card-emoji" aria-hidden="true">🎛️</span>
+          <span data-i18n="tips.do">Do</span>
+          <h3 data-i18n="tips.13.title">Check app permissions.</h3>
+          <p data-i18n="tips.13.body">If an app does not need your location, camera, or microphone, turn that permission off in Settings.</p>
+        </article>
+        <article class="tip-card dont-card">
+          <span class="card-emoji" aria-hidden="true">🏦</span>
+          <span data-i18n="tips.dont">Don’t</span>
+          <h3 data-i18n="tips.14.title">Don’t use public Wi-Fi for banking.</h3>
+          <p data-i18n="tips.14.body">Public Wi-Fi can be less private. Use your home Wi-Fi or cellular connection for banking and medical accounts.</p>
+        </article>
+        <article class="tip-card do-card">
+          <span class="card-emoji" aria-hidden="true">🔒</span>
+          <span data-i18n="tips.do">Do</span>
+          <h3 data-i18n="tips.15.title">Use a lock screen.</h3>
+          <p data-i18n="tips.15.body">A passcode, fingerprint, or face unlock protects photos, messages, and accounts if the phone is lost.</p>
+        </article>
+        <article class="tip-card dont-card">
+          <span class="card-emoji" aria-hidden="true">🗝️</span>
+          <span data-i18n="tips.dont">Don’t</span>
+          <h3 data-i18n="tips.16.title">Don’t use the same password everywhere.</h3>
+          <p data-i18n="tips.16.body">If one account is stolen, different passwords help protect the others.</p>
+        </article>
+        <article class="tip-card do-card">
+          <span class="card-emoji" aria-hidden="true">☁️</span>
+          <span data-i18n="tips.do">Do</span>
+          <h3 data-i18n="tips.17.title">Back up photos automatically.</h3>
+          <p data-i18n="tips.17.body">iCloud, Google Photos, or another trusted backup can protect memories if the phone breaks.</p>
+        </article>
+        <article class="tip-card dont-card">
+          <span class="card-emoji" aria-hidden="true">⏸️</span>
+          <span data-i18n="tips.dont">Don’t</span>
+          <h3 data-i18n="tips.18.title">Don’t answer pressure with speed.</h3>
+          <p data-i18n="tips.18.body">Scammers rush people. Pause, hang up, and call the official number yourself.</p>
+        </article>
+        <article class="tip-card do-card">
+          <span class="card-emoji" aria-hidden="true">🧵</span>
+          <span data-i18n="tips.do">Do</span>
+          <h3 data-i18n="tips.19.title">Clean the charging port gently.</h3>
+          <p data-i18n="tips.19.body">Lint can stop charging. Never use liquid or metal. Ask a trusted repair shop if you are unsure.</p>
+        </article>
+        <article class="tip-card dont-card">
+          <span class="card-emoji" aria-hidden="true">🔕</span>
+          <span data-i18n="tips.dont">Don’t</span>
+          <h3 data-i18n="tips.20.title">Don’t keep every notification on.</h3>
+          <p data-i18n="tips.20.body">Too many alerts are stressful and use battery. Turn off notifications for apps you do not need immediately.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="social-section" id="social-media" aria-labelledby="social-title">
+      <div class="section-heading train-heading">
+        <div>
+          <p class="eyebrow" data-i18n="social.eyebrow">Social media tutorials</p>
+          <h2 id="social-title" data-i18n="social.title">Understand what Facebook is showing you.</h2>
+          <p data-i18n="social.body">Facebook makes suggestions and chooses posts for your Feed. You are still in control of who you follow, what you see, and what you trust.</p>
+        </div>
+        <svg class="mascot mascot-heading mascot-social" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg>
+      </div>
+
+      <div class="social-tutorial-grid">
+        <article class="social-tutorial-card">
+          <span class="tutorial-number" aria-hidden="true">01</span>
+          <h3 data-i18n="social.search.title">Facebook search is not Google.</h3>
+          <p data-i18n="social.search.body">Facebook search looks for people, posts, photos, Pages, groups, and other things inside Facebook. Its results are personalized by your Facebook activity. A result is not automatically true just because Facebook shows it.</p>
+          <ol>
+            <li data-i18n="social.search.step1"><strong>Check where you are.</strong> The Facebook search bar searches Facebook.</li>
+            <li data-i18n="social.search.step2"><strong>Use your web browser for the wider internet.</strong> Google, Bing, or another search engine searches websites beyond Facebook.</li>
+            <li data-i18n="social.search.step3"><strong>Verify important information.</strong> For health, money, government, or emergencies, visit the organization’s official website yourself.</li>
+          </ol>
+        </article>
+
+        <article class="social-tutorial-card">
+          <span class="tutorial-number" aria-hidden="true">02</span>
+          <h3 data-i18n="social.suggested.title">Seeing someone does not mean you follow them.</h3>
+          <p data-i18n="social.suggested.body">“Suggested for You” and “People You May Know” are recommendations chosen by Facebook. Facebook can recommend people, Pages, groups, and posts you have never followed.</p>
+          <ol>
+            <li data-i18n="social.suggested.step1"><strong>Look for words such as “Suggested for You.”</strong> That means Facebook placed it there as a recommendation.</li>
+            <li data-i18n="social.suggested.step2"><strong>You choose the connection.</strong> Only tap Follow, Add Friend, or Join when you recognize and trust the person or group.</li>
+            <li data-i18n="social.suggested.step3"><strong>A suggestion is not a request you must accept.</strong> You can remove it, hide it, or keep scrolling.</li>
+          </ol>
+        </article>
+
+        <article class="social-tutorial-card">
+          <span class="tutorial-number" aria-hidden="true">03</span>
+          <h3 data-i18n="social.dots.title">Use the three dots to improve your Feed.</h3>
+          <p data-i18n="social.dots.body">The three-dot button near the top-right corner of a post opens choices for that post. The exact words can differ by device or Facebook version.</p>
+          <ol>
+            <li data-i18n="social.dots.step1"><strong>Tap the three dots.</strong> Look near the top-right of the post.</li>
+            <li data-i18n="social.dots.step2"><strong>Choose “Not interested,” “Show less,” or “Hide post.”</strong> This tells Facebook you want fewer posts like it.</li>
+            <li data-i18n="social.dots.step3"><strong>Use Report for harmful content.</strong> Report scams, impersonation, threats, or posts that may break Facebook’s rules.</li>
+          </ol>
+        </article>
+
+        <article class="social-tutorial-card ai-video-card">
+          <span class="tutorial-number" aria-hidden="true">04</span>
+          <h3 data-i18n="social.ai.title">AI videos can look and sound real.</h3>
+          <p data-i18n="social.ai.body">Some AI-made or edited videos have visible mistakes, but the best fakes may not. Do not decide based on strange hands or lips alone. Verify the source before believing or sharing the video.</p>
+          <ol>
+            <li data-i18n="social.ai.step1"><strong>Check the account.</strong> Is it the real person or organization? Look at its name, history, and official website.</li>
+            <li data-i18n="social.ai.step2"><strong>Look and listen carefully.</strong> Warning signs can include mismatched lips and audio, unnatural motion, warped text, changing backgrounds, or impossible details.</li>
+            <li data-i18n="social.ai.step3"><strong>Notice emotional pressure.</strong> Pause when a video demands urgent action, money, secrecy, or immediate sharing.</li>
+            <li data-i18n="social.ai.step4"><strong>Confirm with more than one reliable source.</strong> AI labels can help, but no label does not prove a video is real.</li>
+          </ol>
+          <p class="tutorial-callout" data-i18n="social.ai.rule"><strong>Best rule:</strong> Verify the source, not just the pixels.</p>
+        </article>
+      </div>
+
+      <p class="tutorial-sources">
+        <span data-i18n="social.sources">Current guidance:</span>
+        <a href="https://www.facebook.com/help/103764609715185" target="_blank" rel="noopener">Facebook Search</a>,
+        <a href="https://www.facebook.com/help/1257205004624246" target="_blank" rel="noopener">Facebook recommendations</a>,
+        <a href="https://www.facebook.com/help/231515559920930" target="_blank" rel="noopener">Not interested</a>,
+        <a href="https://www.cisa.gov/sites/default/files/publications/mdm-inauthentic-content-product-english_508.pdf" target="_blank" rel="noopener">CISA manipulated media guidance</a>.
+      </p>
+    </section>
+
+    <section class="ai-scam-section" id="ai-scams" aria-labelledby="ai-scam-title">
+      <div class="section-heading train-heading">
+        <div>
+          <p class="eyebrow" data-i18n="scamSafety.eyebrow">AI and social scam safety</p>
+          <h2 id="ai-scam-title" data-i18n="scamSafety.title">A familiar face or voice can still be fake.</h2>
+          <p data-i18n="scamSafety.body">Scammers can copy voices, use convincing video, take over real social accounts, and create fake profiles. You do not have to decide during the call or message.</p>
+        </div>
+        <svg class="mascot mascot-heading mascot-scam" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg>
+      </div>
+
+      <div class="scam-stop-rule" role="note">
+        <span aria-hidden="true">STOP</span>
+        <div>
+          <strong data-i18n="scamSafety.stopTitle">Stop, hang up, and verify another way.</strong>
+          <p data-i18n="scamSafety.stopBody">Call the person, bank, or company using a number you already know or find on its official website. Never use the number or link supplied by the unexpected caller.</p>
+        </div>
+      </div>
+
+      <div class="scam-guide-grid">
+        <article class="scam-guide-card urgent-scam-card">
+          <span class="scam-icon" aria-hidden="true">☎</span>
+          <h3 data-i18n="scamSafety.voice.title">AI voice calls and family emergencies</h3>
+          <p data-i18n="scamSafety.voice.body">A scammer may clone a relative’s voice from a short online recording. The voice may cry, whisper, or claim there was an accident, arrest, kidnapping, or medical emergency.</p>
+          <ul>
+            <li data-i18n="scamSafety.voice.sign1">Urgency, secrecy, and “you are the only person who can help” are major warning signs.</li>
+            <li data-i18n="scamSafety.voice.sign2">Hang up and call your relative using the number already saved in your contacts.</li>
+            <li data-i18n="scamSafety.voice.sign3">Ask a private family question or use a family safe word. Do not send gift cards, cryptocurrency, cash, or a security code.</li>
+          </ul>
+        </article>
+
+        <article class="scam-guide-card urgent-scam-card">
+          <span class="scam-icon" aria-hidden="true">▣</span>
+          <h3 data-i18n="scamSafety.video.title">Fake FaceTime and video calls</h3>
+          <p data-i18n="scamSafety.video.body">A video call can use a stolen account, prerecorded video, face filters, or AI. A bank, Apple, the police, or the government should not unexpectedly FaceTime you for money or account access.</p>
+          <ul>
+            <li data-i18n="scamSafety.video.sign1">Do not share your screen, bank app, password, passcode, or text-message security code.</li>
+            <li data-i18n="scamSafety.video.sign2">Do not allow remote screen control for someone who contacted you unexpectedly.</li>
+            <li data-i18n="scamSafety.video.sign3">End the call and contact the organization through its official app, card, statement, or website.</li>
+          </ul>
+        </article>
+
+        <article class="scam-guide-card instagram-scam-card">
+          <span class="scam-icon" aria-hidden="true">IG</span>
+          <h3 data-i18n="scamSafety.instagram.title">Instagram scams</h3>
+          <p data-i18n="scamSafety.instagram.body">Watch for fake account-security warnings, paid verification offers, celebrity impersonators, romance messages, cash-flipping investments, and shops that move payment outside Instagram.</p>
+          <ul>
+            <li data-i18n="scamSafety.instagram.sign1">Instagram says it will not send account-security warnings through a direct message.</li>
+            <li data-i18n="scamSafety.instagram.sign2">Never send a password, login link, security code, deposit, or “release fee.”</li>
+            <li data-i18n="scamSafety.instagram.sign3">Open the profile’s three-dot menu to inspect or report the account. Check official Instagram emails inside Settings.</li>
+          </ul>
+        </article>
+
+        <article class="scam-guide-card snapchat-scam-card">
+          <span class="scam-icon" aria-hidden="true">SC</span>
+          <h3 data-i18n="scamSafety.snapchat.title">Snapchat scams</h3>
+          <p data-i18n="scamSafety.snapchat.body">Common traps include fake Snapchat support, phishing links, a hacked friend asking for money, fake giveaways, and threats involving private pictures.</p>
+          <ul>
+            <li data-i18n="scamSafety.snapchat.sign1">Snapchat staff will not contact you through a Snap or Chat to provide support.</li>
+            <li data-i18n="scamSafety.snapchat.sign2">Back out if Snapchat warns that a link may be dangerous. Do not enter your login information.</li>
+            <li data-i18n="scamSafety.snapchat.sign3">Press and hold suspicious content or messages, then choose Report. Do not pay someone who threatens or blackmails you.</li>
+          </ul>
+        </article>
+
+        <article class="scam-guide-card tiktok-scam-card">
+          <span class="scam-icon" aria-hidden="true">TT</span>
+          <h3 data-i18n="scamSafety.tiktok.title">TikTok scams</h3>
+          <p data-i18n="scamSafety.tiktok.body">Beware of messages offering free followers, likes, Coins, prizes, brand jobs, investment returns, or account verification through another website.</p>
+          <ul>
+            <li data-i18n="scamSafety.tiktok.sign1">TikTok says legitimate messages will not ask for your password or sensitive personal information.</li>
+            <li data-i18n="scamSafety.tiktok.sign2">Do not open suspicious messages, videos, or links asking you to enter TikTok login details.</li>
+            <li data-i18n="scamSafety.tiktok.sign3">Delete or report message requests from strangers who quickly ask for money, private contact, or personal details.</li>
+          </ul>
+        </article>
+
+        <article class="scam-guide-card all-socials-card">
+          <span class="scam-icon" aria-hidden="true">!</span>
+          <h3 data-i18n="scamSafety.all.title">Facebook, Messenger, WhatsApp, dating apps, and every social platform</h3>
+          <p data-i18n="scamSafety.all.body">The same scams travel between apps: fake Marketplace payments, “new phone number” family messages, romance scams, investment groups, fake support, prizes, and requests to move the conversation elsewhere.</p>
+          <ul>
+            <li data-i18n="scamSafety.all.sign1">A payment screenshot is not proof. Check your bank or payment app yourself.</li>
+            <li data-i18n="scamSafety.all.sign2">Someone who builds trust and then asks for travel money, medical money, investments, gift cards, or cryptocurrency may be running a romance scam.</li>
+            <li data-i18n="scamSafety.all.sign3">Block and report the account. Tell someone you trust before sending money or private information.</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="hot-singles-joke" aria-label="A lighthearted scam reminder" data-i18n-attr="aria-label:scamSafety.jokeLabel">
+        <span aria-hidden="true">♡</span>
+        <p data-i18n="scamSafety.joke">If an ad says “Hot singles in your area are waiting,” the only thing definitely waiting is the payment page. Cupid does not need your credit card number.</p>
+      </aside>
+
+      <p class="scam-sources">
+        <span data-i18n="scamSafety.sources">Safety sources:</span>
+        <a href="https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money" target="_blank" rel="noopener">FTC family emergency scams</a>,
+        <a href="https://support.apple.com/en-us/102568" target="_blank" rel="noopener">Apple FaceTime and support scams</a>,
+        <a href="https://www.facebook.com/help/514187739359208/" target="_blank" rel="noopener">Instagram scam guidance</a>,
+        <a href="https://help.snapchat.com/hc/en-us/articles/7012399221652" target="_blank" rel="noopener">Snapchat reporting</a>,
+        <a href="https://support.tiktok.com/en/safety-hc/account-and-user-safety/avoid-fraudulent-message-attacks-on-tiktok" target="_blank" rel="noopener">TikTok phishing guidance</a>.
+      </p>
+    </section>
+
+    <section class="quiz-section" id="track-challenge" aria-labelledby="quiz-title">
+      <div class="section-heading train-heading">
+        <div>
+          <p class="eyebrow" data-i18n="quiz.eyebrow">TUTUT Track Challenge</p>
+          <h2 id="quiz-title" data-i18n="quiz.title">Practice what you learned and earn train badges.</h2>
+          <p data-i18n="quiz.body">Choose the safest answer. Every correct stop earns a big “CHOOO-CHOOO,” and your achievements stay saved on this device.</p>
+        </div>
+        <svg class="mascot mascot-heading mascot-quiz" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg>
+      </div>
+
+      <div class="quiz-layout">
+        <div class="quiz-game" id="quiz-game">
+          <div class="quiz-toolbar">
+            <div><span data-i18n="quiz.questionLabel">Question</span> <strong id="quiz-progress">1 / 14</strong></div>
+            <div><span data-i18n="quiz.scoreLabel">Score</span> <strong id="quiz-score">0</strong></div>
+            <div><span data-i18n="quiz.streakLabel">Streak</span> <strong id="quiz-streak">0</strong></div>
+            <button class="quiz-sound-toggle" id="quiz-sound-toggle" type="button" aria-pressed="true" data-i18n="quiz.soundOn">Train sounds: On</button>
+          </div>
+
+          <div class="quiz-question-card">
+            <span class="quiz-category" id="quiz-category">Phone safety</span>
+            <h3 id="quiz-question">What should you do?</h3>
+            <div class="quiz-options" id="quiz-options" role="group" aria-labelledby="quiz-question"></div>
+            <p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p>
+            <button class="primary-button quiz-next-button" id="quiz-next" type="button" hidden data-i18n="quiz.next">Next question</button>
+          </div>
+        </div>
+
+        <aside class="achievement-panel" aria-labelledby="achievement-title">
+          <div class="achievement-heading">
+            <span aria-hidden="true">★</span>
+            <div>
+              <h3 id="achievement-title" data-i18n="quiz.achievements">Your achievements</h3>
+              <p data-i18n="quiz.achievementsBody">Badges are saved in this browser.</p>
+            </div>
+          </div>
+          <div class="achievement-list" id="achievement-list"></div>
+          <button class="quiz-restart-button" id="quiz-restart" type="button" data-i18n="quiz.restart">Restart challenge</button>
+        </aside>
+      </div>
+
+      <div class="achievement-toast" id="achievement-toast" role="status" aria-live="polite" hidden></div>
+      <p class="audio-credits">
+        Game audio: <a href="https://commons.wikimedia.org/wiki/File:AirChime_K5LA.ogg" target="_blank" rel="noopener">AirChime K5LA horn</a> (CC0) and
+        <a href="https://freesound.org/people/HoBoTrails/sounds/426021/" target="_blank" rel="noopener">tire-braking screech</a> by HoBoTrails (CC0).
+      </p>
+    </section>
+
+    <section class="learn-section" id="learn">
+      <div>
+        <p class="eyebrow" data-i18n="learn.eyebrow">Learn without pressure</p>
+        <h2 data-i18n="learn.title">Small lessons. Useful skills.</h2>
+      </div>
+      <div class="lesson-list">
+        <article><span>01</span><div><h3 data-i18n="learn.one.title">Phone basics</h3><p data-i18n="learn.one.body">Buttons, volume, charging, and getting home.</p></div></article>
+        <article><span>02</span><div><h3 data-i18n="learn.two.title">Taking and sharing photos</h3><p data-i18n="learn.two.body">Keep the moments you care about close.</p></div></article>
+        <article><span>03</span><div><h3 data-i18n="learn.three.title">Safer everyday browsing</h3><p data-i18n="learn.three.body">Recognize ads, real links, and warning signs.</p></div></article>
+      </div>
+    </section>
+
+    <section class="safety-section" id="safety">
+      <div class="shield" aria-hidden="true">✓</div>
+      <div>
+        <p class="eyebrow" data-i18n="safety.eyebrow">A TUTUT safety promise</p>
+        <h2 data-i18n="safety.title">We will never ask for your password.</h2>
+        <p data-i18n="safety.body">
+          Never share a password, bank number, or text-message security code with
+          someone who contacts you unexpectedly. A real helper will let you type
+          private information yourself.
+        </p>
+      </div>
+      <svg class="mascot mascot-small mascot-safety" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">T</span><span>TUTUT</span><svg class="mascot mascot-footer" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg></a>
+    <p data-i18n="footer">Friendly technology help for everyone.</p>
+  </footer>
+
+  <dialog class="guide-dialog" id="guide-dialog" aria-labelledby="guide-title">
+    <div class="dialog-top">
+      <span class="dialog-label" data-i18n="dialog.label">TUTUT step-by-step help</span>
+      <button class="close-button" id="close-guide" type="button" aria-label="Close this guide" data-i18n-attr="aria-label:dialog.close">×</button>
+    </div>
+    <div id="guide-content"></div>
+  </dialog>
+
+  <dialog class="guide-dialog helpbot-dialog" id="helpbot-dialog" aria-labelledby="helpbot-title">
+    <div class="dialog-top">
+      <span class="dialog-label" data-i18n="helpbot.label">TUTUT help bot</span>
+      <button class="close-button" id="close-helpbot" type="button" aria-label="Close help bot" data-i18n-attr="aria-label:helpbot.close">×</button>
+    </div>
+    <div class="helpbot-content">
+      <div class="helpbot-header">
+        <svg class="mascot helpbot-avatar" aria-hidden="true" focusable="false"><use href="#tutut-train-mascot"></use></svg>
+        <div>
+          <h2 id="helpbot-title" data-i18n="helpbot.title">How can TUTUT help?</h2>
+          <p data-i18n="helpbot.note">Ask about phone trouble, pop-ups, scams, storage, Wi-Fi, repairs, or passwords. Live internet search can be connected in a future backend version.</p>
+        </div>
+      </div>
+      <div class="chat-window" id="chat-window" aria-live="polite">
+        <p class="chat-message bot-message" data-i18n="helpbot.greeting">Hi, I’m TUTUT. Tell me what is happening, and I’ll point you to a safe next step.</p>
+      </div>
+      <form class="chat-form" id="chat-form">
+        <label for="chat-input" data-i18n="helpbot.inputLabel">Type your question</label>
+        <div class="chat-input-row">
+          <input id="chat-input" type="text" autocomplete="off" data-i18n-attr="placeholder:helpbot.placeholder" placeholder="Example: my phone says it has a virus">
+          <button class="primary-button" type="submit" data-i18n="helpbot.send">Ask</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog class="guide-dialog quiz-results-dialog" id="quiz-results-dialog" aria-labelledby="quiz-results-title">
+    <div class="dialog-top quiz-results-top">
+      <span class="dialog-label" data-i18n="quiz.resultsLabel">TUTUT Track Challenge results</span>
+      <button class="close-button" id="close-quiz-results" type="button" aria-label="Close results" data-i18n-attr="aria-label:quiz.resultsClose">×</button>
+    </div>
+    <div class="quiz-results-content">
+      <h2 id="quiz-results-title" data-i18n="quiz.resultsTitle">Your complete answer review</h2>
+      <p class="quiz-results-summary" id="quiz-results-summary"></p>
+      <div class="quiz-results-grid" id="quiz-results-grid"></div>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
